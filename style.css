@@ -4,12 +4,13 @@
 }
 body {
     box-sizing: border-box;
-    background-color: rgb(0, 48, 66);
+    background-color: rgb(0, 0, 0);
     font-family: Tahoma sans-serif;
 }
 figcaption {
-    color: #fff;
+    color: rgb(90, 92, 218);
     margin: 10px 0 10 30px;
+    font-size: 1.3em;
     font-weight: bold;
 }
 figcaption > span {
@@ -17,15 +18,24 @@ figcaption > span {
     margin-left: 35em;
 }
 .wrapper {
-    width: 99%;
+    width: 85%;
     margin: 5px auto;
     padding-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* grid-auto-rows: minmax(200px auto); */
-    grid-gap: .4em;
+    grid-gap: 1em;
 }
 
+.wrapper > div {
+    box-shadow: 0px 0px 8px 4px rgb(138, 147, 179);
+    
+    transition: .3s;
+    cursor: pointer;
+}
+.wrapper > div:hover {
+    transform: scale(1.01);
+}
 @media screen and (min-width: 610px) and (max-width: 810px) {
    .wrapper {
     /* grid-template-columns: 2fr 2fr 2fr; */
